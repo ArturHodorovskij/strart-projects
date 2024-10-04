@@ -12,12 +12,12 @@ fun main() {
             println("введите число меньше")
             continue
         }
-        if (randomNumber == readNumber) { //схуяли оно доебалось?
-            print("Красава, загаданное число $randomNumber, твое число $readNumber")
-            break
-        }
+
+        print("Красава, загаданное число $randomNumber, твое число $readNumber")
+        break
     }
 }
+
 
 fun writeNumber(): Int {
     while (true) {
