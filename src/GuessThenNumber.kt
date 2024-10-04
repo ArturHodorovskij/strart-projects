@@ -18,7 +18,9 @@ fun main() {
     }
 }
 /////
-  
+
+//
+
 
 fun writeNumber(): Int {
     while (true) {
