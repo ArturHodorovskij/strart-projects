@@ -17,7 +17,6 @@ fun main() {
         }
         break
     }
-
 }
 
 fun converterCurrency() {
@@ -36,7 +35,6 @@ fun converterCurrency() {
         break
 
     }
-
 }
 
 fun converterTemperature() {
@@ -61,5 +59,4 @@ fun convertDistance() {
         println("Расстояние в футах: $feet")
         break
     }
-
 }
