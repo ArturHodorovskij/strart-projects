@@ -1,14 +1,14 @@
 fun main() {
     while (true) {
-        println("a - Конвертер валют")
-        println("b - Конвертер температуры")
-        println("c - Конвертер расстояние")
+        println("1 - Конвертер валют")
+        println("2 - Конвертер температуры")
+        println("3 - Конвертер расстояние")
         print("Выберите необходимый конвертер: ")
 
         when (readln()) {
-            "a" -> converterCurrency()
-            "b" -> converterTemperature()
-            "c" -> convertDistance()
+            "1" -> converterCurrency()
+            "2" -> converterTemperature()
+            "3" -> convertDistance()
 
             else -> {
                 println("Неверное значение, попробуйсте снова")
