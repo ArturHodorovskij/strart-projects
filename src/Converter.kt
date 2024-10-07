@@ -4,12 +4,10 @@ fun main() {
         println("2 - Конвертер температуры")
         println("3 - Конвертер расстояние")
         print("Выберите необходимый конвертер: ")
-
         when (readln()) {
             "1" -> converterCurrency()
             "2" -> converterTemperature()
             "3" -> convertDistance()
-
             else -> {
                 println("Неверное значение, попробуйсте снова")
                 continue
@@ -27,7 +25,6 @@ fun converterCurrency() {
         val eur = readBlr / 3.59
         val pln = readBlr / 0.83
         val rub = readBlr / 0.0345
-
         println("Курс доллара: $usd")
         println("Курс евро: $eur")
         println("Курс злотого: $pln")
