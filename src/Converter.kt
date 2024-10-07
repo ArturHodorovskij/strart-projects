@@ -34,7 +34,8 @@ fun converterCurrency() {
         println("Курс российского рубля: $rub")
         break
 
-    }
+    }/////
+    ////
 }
 
 fun converterTemperature() {
