@@ -19,23 +19,24 @@ fun main() {
 
 fun convertMoney() {
     while (true) {
+        print("Введите сумму BLR: ")
+        val readBlr = readln().toDoubleOrNull() ?: continue
         println("1 - Конвертер валют USD")
         println("2 - Конвертер валют EUR")
         println("3 - Конвертер валют PLN")
         println("4 - Конвертер валют RUB")
-      
-        print("Введите сумму BLR: ")
-        val readBlr = readln().toDoubleOrNull() ?: continue
-        val usd = readBlr / 3.25
-        val eur = readBlr / 3.59
-        val pln = readBlr / 0.83
-        val rub = readBlr / 0.0345
-        println("Курс доллара: $usd")
-        println("Курс евро: $eur")
-        println("Курс злотого: $pln")
-        println("Курс российского рубля: $rub")
+        println("Выберите необходимую валюту")
+        when (readln()) {
+            "1" -> println("Доллары:${readBlr / 3.25} USD")
+            "2" -> println("Евро:${readBlr / 3.59} EUR")
+            "3" -> println("Злотые:${readBlr / 0.83} PLN")
+            "4" -> println("Российский рубль:${readBlr / 0.0345} RUB")
+            else -> {
+                println("Неверное значение, попробуйсте снова")
+                continue
+            }
+        }
         break
-
     }
 }
 
