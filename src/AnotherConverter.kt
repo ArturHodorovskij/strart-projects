@@ -25,7 +25,7 @@ fun convertMoney() {
         println("2 - Конвертер валют EUR")
         println("3 - Конвертер валют PLN")
         println("4 - Конвертер валют RUB")
-        println("Выберите необходимую валюту")
+        print("Выберите необходимую валюту: ")
         when (readln()) {
             "1" -> println("Доллары:${readBlr / 3.25} USD")
             "2" -> println("Евро:${readBlr / 3.59} EUR")
