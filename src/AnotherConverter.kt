@@ -5,7 +5,7 @@ fun main() {
         println("3 - Конвертер расстояние")
         print("Выберите необходимый конвертер: ")
         when (readln()) {
-            "1" -> convertMoney()
+            "1" -> convertMoney()                  // Ребейс и мердж в гитхабе одинаково отображатся, как дерево открыть
             "2" -> convertTemp()
             "3" -> convertSpacing()
             else -> {
